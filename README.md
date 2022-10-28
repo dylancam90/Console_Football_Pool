@@ -3,9 +3,9 @@
 This takes an Excel type file with columns (name | game1...game15 | points) and uses pandas to turn the information into a CSV. Then it loads all rows and columns into memory and checks against an API for final scores ranking how many teams were picked correctly to win. It then prints this to the console. I may route it to a results.txt file as well.
 
 ## How to use
-'''
+```
 python xlsx_to_csv.py spreadsheet_name.xlsx week_number
-'''
+```
 
 week_number will turn into a csv file in your root directory but I may remove this when testing is done.
 
