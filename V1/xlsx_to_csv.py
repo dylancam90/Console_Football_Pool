@@ -12,6 +12,8 @@ argc = len(argv)
 excel = argv[1]
 csv_out = f"week_{argv[2]}.csv"
 
+
+
 def make_csv():
     if check_for_file(csv_out):
         error(f"csv for week number {argv[2]} already exists")
