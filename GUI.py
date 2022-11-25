@@ -65,7 +65,6 @@ class App:
             picks = refine_picks(csv_name)
             winners = make_leaderboard(winning_teams, picks, prize_total)
             last_score = check_last_game(winning_teams)
-            print(last_score)
         
         # BUILD SEARCH
         self.search_frame = Frame(self.root)
@@ -122,8 +121,7 @@ class App:
         name = self.search_entry.get().upper()
         for i in winners:
             if i["name"] == name:
-                print(i["name"])
-                display = 'Place: {:<10} Name: {:<20} Win Count: {:<20} Points {:<20}'
+                display = 'Place: {:<10} Name: {:<20} Win Count: {:<20} Points: {:<20}'
                 self.display_text.set(display.format(i['place'], i["name"], i['count'], i['points']))
                 return 
 
